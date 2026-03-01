@@ -1,0 +1,82 @@
+/* ============================= */
+/*   MARINI NOTES — TYPEWRITER   */
+/* ============================= */
+
+/* Palette carta vintage */
+:root {
+  --md-primary-fg-color: #111111;
+  --md-default-bg-color: #f3ecd9;
+  --md-accent-fg-color: #111111;
+}
+
+/* Corpo pagina */
+body {
+  background-color: #f3ecd9 !important;
+  color: #1a1a1a !important;
+  font-family: "Courier New", Courier, monospace !important;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+
+/* Rimuove header moderno blu */
+.md-header {
+  display: none !important;
+}
+
+/* Rimuove footer */
+.md-footer {
+  display: none !important;
+}
+
+/* Rimuove sidebar destra (table of contents) */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* Centra contenuto come foglio */
+.md-content {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+/* Titoli */
+.md-typeset h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
+}
+
+.md-typeset h2 {
+  margin-top: 3rem;
+  letter-spacing: 0.1em;
+}
+
+/* Link stile dattiloscritto */
+.md-typeset a {
+  color: #111 !important;
+  text-decoration: underline;
+}
+
+.md-typeset a:hover {
+  background-color: #111;
+  color: #f3ecd9 !important;
+}
+
+/* Blocchi codice */
+.md-typeset code {
+  background: rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.25);
+  padding: 2px 6px;
+}
+
+/* Scrollbar più pulita */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+}
