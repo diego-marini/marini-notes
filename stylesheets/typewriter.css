@@ -248,3 +248,31 @@ body::before{
     width: auto;
   }
 }
+
+/* ===== CTA links (Vai a...) ===== */
+.md-typeset a.cta{
+  display: inline-block;
+  border: 1px solid rgba(21,21,21,.35);
+  background: rgba(0,0,0,.03);
+  padding: 10px 14px;
+  margin: 6px 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
+  box-shadow: none;
+}
+
+/* freccia sensata, non emoji */
+.md-typeset a.cta::after{
+  content: " ›";
+  opacity: .85;
+}
+
+/* hover coerente col tema */
+.md-typeset a.cta:hover{
+  background: var(--ink);
+  color: var(--paper) !important;
+  box-shadow: 0 0 0 3px var(--ink);
+}
