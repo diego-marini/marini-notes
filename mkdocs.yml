@@ -1,4 +1,4 @@
-site_name: Appunti — Diego Marini
+site_name: Diego Marini
 site_url: https://marini.work
 
 theme:
@@ -6,9 +6,12 @@ theme:
 
 nav:
   - Home: index.md
-  - Geometria: geometria/index.md
-  - Fisica 1: fisica/index.md
-  - Fondamenti di Informatica: fondamenti/index.md
+  - Appunti:
+      - Geometria: geometria/index.md
+      - Fisica 1: fisica/index.md
+      - Fondamenti di Informatica (Modulo 2): fondamenti/index.md
+  - Problem Solving: problem-solving.md
+  - Chi sono: about.md
 
 extra_css:
   - stylesheets/typewriter.css
