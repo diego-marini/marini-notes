@@ -1,82 +1,185 @@
-/* ============================= */
-/*   MARINI NOTES — TYPEWRITER   */
-/* ============================= */
+/* ==========================================
+   MARINI.WORK — VINTAGE TYPEWRITER EDITORIAL
+   ========================================== */
 
-/* Palette carta vintage */
-:root {
-  --md-primary-fg-color: #111111;
-  --md-default-bg-color: #f3ecd9;
-  --md-accent-fg-color: #111111;
+/* Paper palette + ink */
+:root{
+  --paper: #f3ecd9;
+  --paper-2: #efe6cf;
+  --ink: #151515;
+  --ink-2: rgba(21,21,21,.72);
+  --hairline: rgba(21,21,21,.18);
+
+  --md-primary-fg-color: var(--ink);
+  --md-default-bg-color: var(--paper);
+  --md-accent-fg-color: var(--ink);
+
+  --md-text-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --md-code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/* Corpo pagina */
-body {
-  background-color: #f3ecd9 !important;
-  color: #1a1a1a !important;
-  font-family: "Courier New", Courier, monospace !important;
-  letter-spacing: 0.05em;
-  line-height: 1.7;
+/* Global */
+html, body{
+  background: var(--paper) !important;
+  color: var(--ink) !important;
 }
 
-/* Rimuove header moderno blu */
-.md-header {
-  display: none !important;
+/* Kill modern chrome */
+.md-header, .md-footer{ display:none !important; }
+.md-sidebar--secondary{ display:none !important; }
+
+/* Layout = printed page */
+.md-main__inner{
+  margin-top: 3rem !important;
+}
+.md-content{
+  max-width: 820px !important;
+  margin: 0 auto !important;
+  padding: 0 2.2rem 4rem 2.2rem !important;
 }
 
-/* Rimuove footer */
-.md-footer {
-  display: none !important;
+/* Subtle paper texture (CSS-only, no images) */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(1200px 800px at 30% 20%, rgba(0,0,0,.06), transparent 60%),
+    radial-gradient(900px 700px at 70% 80%, rgba(0,0,0,.05), transparent 55%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.015), rgba(0,0,0,.015) 1px, transparent 1px, transparent 7px);
+  mix-blend-mode: multiply;
+  opacity: .35;
 }
 
-/* Rimuove sidebar destra (table of contents) */
-.md-sidebar--secondary {
-  display: none !important;
+/* Sidebar (left) — minimal, editorial */
+.md-sidebar{
+  background: transparent !important;
+  border-right: 1px solid var(--hairline);
 }
-
-/* Centra contenuto come foglio */
-.md-content {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-top: 3rem;
-}
-
-/* Titoli */
-.md-typeset h1 {
+.md-nav__title{
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-weight: 600;
-  border-bottom: 1px solid #000;
-  padding-bottom: 0.5rem;
+  letter-spacing: .18em;
+  font-size: 12px !important;
+  color: var(--ink-2) !important;
 }
-
-.md-typeset h2 {
-  margin-top: 3rem;
-  letter-spacing: 0.1em;
+.md-nav__link{
+  color: var(--ink) !important;
+  letter-spacing: .02em;
 }
-
-/* Link stile dattiloscritto */
-.md-typeset a {
-  color: #111 !important;
+.md-nav__link--active{
+  font-weight: 700 !important;
   text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.md-nav__link:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
-.md-typeset a:hover {
-  background-color: #111;
-  color: #f3ecd9 !important;
+/* Typography */
+.md-typeset{
+  font-size: 18px !important;
+  line-height: 1.95 !important;
+  letter-spacing: .035em;
+}
+.md-typeset p, .md-typeset li{
+  color: var(--ink) !important;
+}
+.md-typeset hr{
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 2.4rem 0;
 }
 
-/* Blocchi codice */
-.md-typeset code {
-  background: rgba(0,0,0,0.08);
-  border: 1px solid rgba(0,0,0,0.25);
+/* Headings: “stamped” feeling */
+.md-typeset h1{
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-weight: 800 !important;
+  margin: 0 0 1.2rem 0;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid var(--ink);
+}
+.md-typeset h2{
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 800 !important;
+  margin-top: 2.8rem;
+}
+.md-typeset h3{
+  letter-spacing: .10em;
+  font-weight: 800 !important;
+  margin-top: 2.2rem;
+}
+
+/* Links: ink underline + invert hover */
+.md-typeset a{
+  color: var(--ink) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.md-typeset a:hover{
+  background: var(--ink);
+  color: var(--paper) !important;
+  box-shadow: 0 0 0 3px var(--ink);
+}
+
+/* Inline code and blocks: “annotation” style */
+.md-typeset code{
+  background: rgba(0,0,0,.06) !important;
+  border: 1px solid rgba(0,0,0,.16);
   padding: 2px 6px;
 }
-
-/* Scrollbar più pulita */
-::-webkit-scrollbar {
-  width: 8px;
+.md-typeset pre{
+  background: rgba(0,0,0,.05) !important;
+  border: 1px solid rgba(0,0,0,.18);
 }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.3);
+/* Callouts/admonitions: look like margin notes */
+.md-typeset .admonition,
+.md-typeset details{
+  border: 1px solid rgba(0,0,0,.18) !important;
+  background: rgba(0,0,0,.03) !important;
+  box-shadow: none !important;
+}
+.md-typeset .admonition-title{
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 800;
+}
+
+/* Tables: clean, book-like */
+.md-typeset table{
+  border: 1px solid rgba(0,0,0,.18);
+}
+.md-typeset table th{
+  background: rgba(0,0,0,.05);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 12px;
+}
+
+/* Subtle “book gutter” line (left margin) */
+.md-content::before{
+  content:"";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-410px); /* half of max-width (820/2) */
+  width: 1px;
+  background: rgba(0,0,0,.12);
+  opacity: .6;
+  pointer-events: none;
+}
+
+/* Hide Material search field (optional); comment out if you want it */
+.md-search{ display:none !important; }
+
+/* Make icons less “modern” */
+.md-typeset .twemoji{
+  filter: grayscale(1) contrast(1.1);
+  opacity: .8;
 }
