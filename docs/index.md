@@ -9,17 +9,17 @@ Appunti, esercizi e risorse per studenti di Ingegneria Informatica.
 ### Geometria
 Appunti essenziali, dimostrazioni e schemi per seguire il corso.
 
-➡️ Vai a Geometria
+<a class="cta" href="geometria/">Vai a Geometria</a>
 
 ### Fisica 1
 Teoria, formule e problemi svolti.
 
-➡️ Vai a Fisica 1
+<a class="cta" href="fisica/">Vai a Fisica 1</a>
 
 ### Fondamenti di Informatica (Modulo 2)
 Concetti chiave e approfondimenti di programmazione.
 
-➡️ Vai a Fondamenti di Informatica
+<a class="cta" href="fondamenti/">Vai a Fondamenti di Informatica</a>
 
 ---
 
@@ -36,7 +36,7 @@ Concetti chiave e approfondimenti di programmazione.
 
 Percorso parallelo di algoritmi e strutture dati.
 
-➡️ GitHub: https://github.com/diego-marini/leetcode-journey
+- GitHub › [leetcode-journey](https://github.com/diego-marini/leetcode-journey)
 
 ---
 
@@ -44,7 +44,7 @@ Percorso parallelo di algoritmi e strutture dati.
 
 Vuoi contribuire o segnalare errori?
 
-➡️ Scrivimi: diego@marini.work
+Scrivimi: diego@marini.work
 
 ---
 
