@@ -25,17 +25,125 @@ html, body{
 }
 
 /* Kill modern chrome */
-.md-header, .md-footer{ display:none !important; }
-.md-sidebar--secondary{ display:none !important; }
+.md-header,
+.md-footer{
+  display: none !important;
+}
+
+/* Remove right-side TOC */
+.md-sidebar--secondary{
+  display: none !important;
+}
 
 /* Layout = printed page */
 .md-main__inner{
   margin-top: 3rem !important;
 }
+
 .md-content{
   max-width: 820px !important;
   margin: 0 auto !important;
   padding: 0 2.2rem 4rem 2.2rem !important;
+}
+
+/* Typography */
+.md-typeset{
+  font-size: 18px !important;
+  line-height: 1.95 !important;
+  letter-spacing: .035em;
+}
+
+.md-typeset p,
+.md-typeset li{
+  color: var(--ink) !important;
+}
+
+/* Keep paragraphs readable (like a printed page) */
+.md-typeset p{
+  max-width: 650px;
+}
+
+/* Headings: stamped feeling */
+.md-typeset h1{
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-weight: 800 !important;
+  margin: 0 0 1.2rem 0;
+  padding-bottom: .8rem;
+  border-bottom: 1px solid var(--ink);
+}
+
+.md-typeset h2{
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 800 !important;
+  margin-top: 2.8rem;
+}
+
+.md-typeset h3{
+  letter-spacing: .10em;
+  font-weight: 800 !important;
+  margin-top: 2.2rem;
+}
+
+/* Horizontal rule */
+.md-typeset hr{
+  border: 0;
+  border-top: 1px solid var(--hairline);
+  margin: 2.4rem 0;
+}
+
+/* Links: editorial underline */
+.md-typeset a{
+  color: var(--ink) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(90,83,71,.85);
+  padding-bottom: 1px;
+}
+
+.md-typeset a:hover{
+  background: var(--ink);
+  color: var(--paper) !important;
+  box-shadow: 0 0 0 3px var(--ink);
+  opacity: 1;
+}
+
+/* Inline code and blocks: annotation style */
+.md-typeset code{
+  background: rgba(0,0,0,.06) !important;
+  border: 1px solid rgba(0,0,0,.16);
+  padding: 2px 6px;
+}
+
+.md-typeset pre{
+  background: rgba(0,0,0,.05) !important;
+  border: 1px solid rgba(0,0,0,.18);
+}
+
+/* Callouts/admonitions: like margin notes */
+.md-typeset .admonition,
+.md-typeset details{
+  border: 1px solid rgba(0,0,0,.18) !important;
+  background: rgba(0,0,0,.03) !important;
+  box-shadow: none !important;
+}
+
+.md-typeset .admonition-title{
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 800;
+}
+
+/* Tables: clean, book-like */
+.md-typeset table{
+  border: 1px solid rgba(0,0,0,.18);
+}
+
+.md-typeset table th{
+  background: rgba(0,0,0,.05);
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  font-size: 12px;
 }
 
 /* Subtle paper texture (CSS-only, no images) */
@@ -47,121 +155,58 @@ body::before{
   background:
     radial-gradient(1200px 800px at 30% 20%, rgba(0,0,0,.06), transparent 60%),
     radial-gradient(900px 700px at 70% 80%, rgba(0,0,0,.05), transparent 55%),
-    repeating-linear-gradient(0deg, rgba(0,0,0,.015), rgba(0,0,0,.015) 1px, transparent 1px, transparent 7px);
+    repeating-linear-gradient(
+      0deg,
+      rgba(0,0,0,.015),
+      rgba(0,0,0,.015) 1px,
+      transparent 1px,
+      transparent 7px
+    );
   mix-blend-mode: multiply;
   opacity: .35;
 }
 
-/* Sidebar (left) — minimal, editorial */
+/* Sidebar (left): minimal editorial */
 .md-sidebar{
   background: transparent !important;
   border-right: 1px solid var(--hairline);
 }
+
+/* Sidebar width refinement */
+.md-sidebar--primary{
+  width: 240px;
+}
+
 .md-nav__title{
   text-transform: uppercase;
   letter-spacing: .18em;
   font-size: 12px !important;
   color: var(--ink-2) !important;
+  opacity: .7;
 }
+
 .md-nav__link{
   color: var(--ink) !important;
   letter-spacing: .02em;
 }
+
 .md-nav__link--active{
-  font-weight: 700 !important;
+  font-weight: 800 !important;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
 .md-nav__link:hover{
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-/* Typography */
-.md-typeset{
-  font-size: 18px !important;
-  line-height: 1.95 !important;
-  letter-spacing: .035em;
-}
-.md-typeset p, .md-typeset li{
-  color: var(--ink) !important;
-}
-.md-typeset hr{
-  border: 0;
-  border-top: 1px solid var(--hairline);
-  margin: 2.4rem 0;
+/* Reduce vertical spacing between nav items */
+.md-nav__item{
+  margin: 0.3rem 0;
 }
 
-/* Headings: “stamped” feeling */
-.md-typeset h1{
-  text-transform: uppercase;
-  letter-spacing: .22em;
-  font-weight: 800 !important;
-  margin: 0 0 1.2rem 0;
-  padding-bottom: .8rem;
-  border-bottom: 1px solid var(--ink);
-}
-.md-typeset h2{
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-weight: 800 !important;
-  margin-top: 2.8rem;
-}
-.md-typeset h3{
-  letter-spacing: .10em;
-  font-weight: 800 !important;
-  margin-top: 2.2rem;
-}
-
-/* Links: ink underline + invert hover */
-.md-typeset a{
-  color: var(--ink) !important;
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-}
-.md-typeset a:hover{
-  background: var(--ink);
-  color: var(--paper) !important;
-  box-shadow: 0 0 0 3px var(--ink);
-}
-
-/* Inline code and blocks: “annotation” style */
-.md-typeset code{
-  background: rgba(0,0,0,.06) !important;
-  border: 1px solid rgba(0,0,0,.16);
-  padding: 2px 6px;
-}
-.md-typeset pre{
-  background: rgba(0,0,0,.05) !important;
-  border: 1px solid rgba(0,0,0,.18);
-}
-
-/* Callouts/admonitions: look like margin notes */
-.md-typeset .admonition,
-.md-typeset details{
-  border: 1px solid rgba(0,0,0,.18) !important;
-  background: rgba(0,0,0,.03) !important;
-  box-shadow: none !important;
-}
-.md-typeset .admonition-title{
-  text-transform: uppercase;
-  letter-spacing: .18em;
-  font-weight: 800;
-}
-
-/* Tables: clean, book-like */
-.md-typeset table{
-  border: 1px solid rgba(0,0,0,.18);
-}
-.md-typeset table th{
-  background: rgba(0,0,0,.05);
-  text-transform: uppercase;
-  letter-spacing: .14em;
-  font-size: 12px;
-}
-
-/* Subtle “book gutter” line (left margin) */
+/* Subtle "book gutter" line (desktop only) */
 .md-content::before{
   content:"";
   position: fixed;
@@ -175,52 +220,31 @@ body::before{
   pointer-events: none;
 }
 
-/* Hide Material search field (optional); comment out if you want it */
-.md-search{ display:none !important; }
+/* Hide Material search field for ultra-minimal look */
+.md-search{
+  display: none !important;
+}
 
-/* Make icons less “modern” */
+/* Hide “back to top” floating button */
+.md-top{
+  display: none !important;
+}
+
+/* Make emojis/icons less modern */
 .md-typeset .twemoji{
   filter: grayscale(1) contrast(1.1);
   opacity: .8;
 }
 
-/* Sidebar width più raffinata */
-.md-sidebar--primary {
-    width: 240px;
-}
-
-.md-nav__title {
-    font-size: 0.85rem;
-    letter-spacing: 2px;
-    opacity: 0.7;
-}
-
-/* Riduce spazio verticale tra link */
-.md-nav__item {
-    margin: 0.3rem 0;
-}
-
-h1 {
-    margin-bottom: 0.5rem;
-}
-
-h1 + hr {
-    margin-top: 0.3rem;
-}
-
-a {
-    text-decoration: none;
-    border-bottom: 1px solid #5a5347;
-}
-
-a:hover {
-    opacity: 0.7;
-}
-
-.md-top {
-    display: none !important;
-}
-
-p {
-    max-width: 650px;
+/* Mobile adjustments */
+@media (max-width: 900px){
+  .md-content{
+    padding: 0 1.2rem 3rem 1.2rem !important;
+  }
+  .md-content::before{
+    display: none;
+  }
+  .md-sidebar--primary{
+    width: auto;
+  }
 }
