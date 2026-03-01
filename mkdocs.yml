@@ -1,1 +1,14 @@
-site_name: My Docs
+site_name: Appunti — Diego Marini
+site_url: https://marini.work
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Geometria: geometria/index.md
+  - Fisica 1: fisica/index.md
+  - Fondamenti di Informatica: fondamenti/index.md
+
+extra_css:
+  - stylesheets/typewriter.css

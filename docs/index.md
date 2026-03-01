@@ -1,17 +1,54 @@
-# Welcome to MkDocs
+# APPUNTI DI INGEGNERIA INFORMATICA
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Appunti, esercizi e risorse per studenti di Ingegneria Informatica.
 
-## Commands
+---
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## START HERE
 
-## Project layout
+### Geometria
+Appunti essenziali, dimostrazioni e schemi per seguire il corso.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+➡️ Vai a Geometria
+
+### Fisica 1
+Teoria, formule e problemi svolti.
+
+➡️ Vai a Fisica 1
+
+### Fondamenti di Informatica (Modulo 2)
+Concetti chiave e approfondimenti di programmazione.
+
+➡️ Vai a Fondamenti di Informatica
+
+---
+
+## COME SONO STRUTTURATI GLI APPUNTI
+
+- Teoria essenziale
+- Esercizi svolti
+- Schemi riassuntivi
+- Materiale aggiornato
+
+---
+
+## PROBLEM SOLVING
+
+Percorso parallelo di algoritmi e strutture dati.
+
+➡️ GitHub: https://github.com/diego-marini/leetcode-journey
+
+---
+
+## COMMUNITY
+
+Vuoi contribuire o segnalare errori?
+
+➡️ Scrivimi: diego@marini.work
+
+---
+
+## CHI SONO
+
+Diego Marini  
+Computer Engineering student @ Tor Vergata
