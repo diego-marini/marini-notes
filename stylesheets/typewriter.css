@@ -276,3 +276,45 @@ body::before{
   color: var(--paper) !important;
   box-shadow: 0 0 0 3px var(--ink);
 }
+
+/* ===== Homepage hero (typographic cover) ===== */
+.md-typeset h1{
+  margin-bottom: 0.35rem !important;
+}
+
+.hero-meta{
+  margin-top: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: 12px;
+  opacity: .75;
+}
+
+
+/* CTA (clean editorial) */
+.md-typeset a.cta{
+  display: inline-block;
+  margin: 14px 0 4px 0;
+  padding: 6px 0;
+  font-size: 18px;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  color: var(--ink) !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(21,21,21,.55);
+}
+
+.md-typeset a.cta:hover{
+  background: var(--ink);
+  color: var(--paper) !important;
+  box-shadow: 0 0 0 3px var(--ink);
+}
+
+/* CTA subtitle */
+.cta-sub{
+  display: block;
+  font-size: 14px;
+  letter-spacing: .02em;
+  opacity: .78;
+  margin-bottom: 6px;
+}
