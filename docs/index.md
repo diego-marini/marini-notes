@@ -1,31 +1,36 @@
 # Diego Marini
-
 Computer Engineering
 
-Appunti e risorse curate per i corsi del primo anno (Tor Vergata), più un log di problem solving su algoritmi e strutture dati.
+<div class="hero-meta">Mathematics · Algorithms · Systems</div>
 
 ---
 
-## Notes
+### Now
+
+Geometria · Fisica 1 · Fondamenti di Informatica
+
+---
+
+## Appunti
 
 <a class="cta" href="geometria/">Geometria</a>  
-Teoria essenziale, dimostrazioni, esercizi.
+<span class="cta-sub">Definizioni, teoremi, dimostrazioni, esercizi.</span>
 
 <a class="cta" href="fisica/">Fisica 1</a>  
-Modelli, formule, problemi svolti.
+<span class="cta-sub">Modelli, formule, problemi svolti.</span>
 
-<a class="cta" href="fondamenti/">Fondamenti di Informatica (Modulo 2)</a>  
-Concetti, strutture dati, ragionamento algoritmico.
+<a class="cta" href="fondamenti/">Fondamenti (Modulo 2)</a>  
+<span class="cta-sub">Strutture dati, logica, pensiero algoritmico.</span>
 
 ---
 
 ## Problem Solving
 
 <a class="cta" href="https://github.com/diego-marini" target="_blank" rel="noopener">GitHub</a>  
-Codice, repository e progressi.
+<span class="cta-sub">Repository e progressi.</span>
 
 <a class="cta" href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode</a>  
-Allenamento su interview-style problems.
+<span class="cta-sub">Allenamento interview-style.</span>
 
 ---
 
