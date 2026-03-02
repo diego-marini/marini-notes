@@ -1,54 +1,29 @@
-# APPUNTI DI INGEGNERIA INFORMATICA
+# Diego Marini
 
-Appunti, esercizi e risorse per studenti di Ingegneria Informatica.
-
----
-
-## START HERE
-
-### Geometria
-Appunti essenziali, dimostrazioni e schemi per seguire il corso.
-
-<a class="cta" href="geometria/">Vai a Geometria</a>
-
-### Fisica 1
-Teoria, formule e problemi svolti.
-
-<a class="cta" href="fisica/">Vai a Fisica 1</a>
-
-### Fondamenti di Informatica (Modulo 2)
-Concetti chiave e approfondimenti di programmazione.
-
-<a class="cta" href="fondamenti/">Vai a Fondamenti di Informatica</a>
+Computer Engineering
 
 ---
 
-## COME SONO STRUTTURATI GLI APPUNTI
+## Notes
 
-- Teoria essenziale
-- Esercizi svolti
-- Schemi riassuntivi
-- Materiale aggiornato
+<a class="cta" href="geometria/">Geometria</a>
 
----
+<a class="cta" href="fisica/">Fisica 1</a>
 
-## PROBLEM SOLVING
-
-Percorso parallelo di algoritmi e strutture dati.
-
-- GitHub › [leetcode-journey](https://github.com/diego-marini/leetcode-journey)
+<a class="cta" href="fondamenti/">Fondamenti di Informatica (Modulo 2)</a>
 
 ---
 
-## COMMUNITY
+## Problem Solving
 
-Vuoi contribuire o segnalare errori?
+<a class="cta" href="https://github.com/diego-marini" target="_blank" rel="noopener">
+GitHub</a>
 
-Scrivimi: diego@marini.work
+<a class="cta" href="https://leetcode.com/" target="_blank" rel="noopener">
+LeetCode</a>
 
 ---
 
-## CHI SONO
+## Contact
 
-Diego Marini  
-Computer Engineering student @ Tor Vergata
+<a class="cta" href="mailto:diego@marini.work">diego@marini.work</a>
