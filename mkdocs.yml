@@ -3,6 +3,7 @@ site_url: https://marini.work
 
 theme:
   name: material
+  language: it
   features:
     - content.action.edit
     - content.action.view
@@ -23,7 +24,23 @@ extra_css:
 
 plugins:
   - search
+  - i18n:
+      languages:
+        - locale: it
+          name: Italiano
+          default: true
+        - locale: en
+          name: English
   - git-revision-date-localized:
       type: date
       locale: it
       enable_creation_date: true
+
+extra:
+  alternate:
+    - name: 🇮🇹 Italiano
+      link: /
+      lang: it
+    - name: 🇬🇧 English
+      link: /en/
+      lang: en
