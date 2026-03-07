@@ -9,10 +9,10 @@ Appunti e materiali del corso.
 <div class="pdf-wrap">
   <iframe
     class="pdf-embed"
-    src="../../assets/pdf/GeometriaVG.pdf"
+    src="../../assets/pdf/geometria.pdf?v=13"
     loading="lazy">
   </iframe>
 </div>
 
-<a class="cta" href="../../assets/pdf/GeometriaVG.pdf" download>Scarica PDF</a>
-<span class="cta-sub">File: GeometriaVG.pdf</span>
+<a class="cta" href="../../assets/pdf/geometria.pdf?v=13" download>Scarica PDF</a>
+<span class="cta-sub">File: geometria.pdf</span>
