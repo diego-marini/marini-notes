@@ -285,16 +285,6 @@ body{
    Solo sul primo paragrafo dopo H1, fuori da admonitions/tabelle
    ========================================================= */
 
-.md-typeset h1 + p::first-letter{
-  float: left;
-  font-family: var(--font-display);
-  font-size: 4.2em;
-  line-height: .84;
-  font-weight: 700;
-  margin: .045em .10em 0 0;
-  color: var(--ink);
-}
-
 
 /* =========================================================
    9) Divider / blockquote
@@ -469,8 +459,8 @@ body{
 
 .pdf-wrap{
   margin: 18px 0 14px 0;
-  border: 1px solid rgba(0,0,0,.14);
-  background: rgba(0,0,0,.02);
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(0,0,0,.015);
 }
 
 .pdf-embed{
