@@ -19,10 +19,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Appunti:
-      - Geometria: geometria/index.md
-      - Fisica 1: fisica/index.md
-      - Fondamenti: fondamenti/index.md
+  - Geometria: geometria/index.md
+  - Fisica 1: fisica/index.md
+  - Fondamenti: fondamenti/index.md
   - Problem Solving: problem-solving.md
   - Progetti: projects.md
   - About: about.md
