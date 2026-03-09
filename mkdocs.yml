@@ -1,13 +1,21 @@
 site_name: Diego Marini
 site_url: https://marini.work
+site_description: Appunti di matematica, fisica e informatica — Diego Marini
+site_author: Diego Marini
 
 theme:
   name: material
   language: it
   features:
-    - content.action.edit
-    - content.action.view
-    - content.footer
+    - navigation.top
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+    - search.highlight
+    - search.suggest
+    - content.code.copy
 
 nav:
   - Home: index.md
@@ -22,19 +30,60 @@ nav:
 extra_css:
   - stylesheets/typewriter.css
 
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
 plugins:
-  - search
+  - search:
+      lang: it
+  - social
   - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
       languages:
         - locale: it
           name: Italiano
           default: true
+          build: true
         - locale: en
           name: English
+          build: true
   - git-revision-date-localized:
       type: date
       locale: it
       enable_creation_date: true
+      fallback_to_build_date: true
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 extra:
   alternate:
@@ -44,3 +93,10 @@ extra:
     - name: 🇬🇧 English
       link: /en/
       lang: en
+  analytics:
+    provider: google
+    property: G-TWYM489267
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/diegomarini
+  generator: false
