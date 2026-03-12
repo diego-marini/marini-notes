@@ -614,3 +614,31 @@ body::after{
     opacity: .015;
   }
 }
+
+/* =========================================================
+   PDF viewer mobile
+   ========================================================= */
+
+.pdf-wrap--viewer{
+  width: 100%;
+  margin: 18px 0 14px 0;
+  border: 1px solid rgba(0,0,0,.10);
+  background: rgba(0,0,0,.015);
+}
+
+.pdf-embed--viewer{
+  width: 100%;
+  height: 88vh;
+  min-height: 720px;
+  border: 0;
+  display: block;
+}
+
+@media (max-width: 900px){
+
+  .pdf-embed--viewer{
+    height: 92vh;
+    min-height: 78vh;
+  }
+
+}
