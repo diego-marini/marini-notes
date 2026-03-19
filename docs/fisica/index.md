@@ -18,4 +18,4 @@ Appunti e materiali del corso.
 Apri PDF
 </a>
 
-<a class="cta" href="../../assets/pdf/fisica1.pdf?v=1.5m" download>Scarica PDF</a>
+<a class="cta" href="../../assets/pdf/fisica1.pdf?v=1.7m" download>Scarica PDF</a>

@@ -18,4 +18,4 @@ Appunti e materiali del corso.
 Apri PDF
 </a>
 
-<a class="cta" href="../../assets/pdf/geometria.pdf?v=1.5" download>Scarica PDF</a>
+<a class="cta" href="../../assets/pdf/geometria.pdf?v=1.6" download>Scarica PDF</a>
